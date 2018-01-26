@@ -1,0 +1,11 @@
+civ:
+  commons-confluent:
+    confluent:
+      schema-registry:
+        urls:
+          - ${civ.collect.schema.registry.url:http://localhost:28081}
+  platform-metadata-consumer:
+    mds-url: ${civ.collect.mds.url:http://metadata-service-demo.private.civitaslearning.com:8080/metadata}
+    timeout: 1000
+    tableMetadataTopic: table-metadata
+    metadataServiceTopic: metadata-service-topic

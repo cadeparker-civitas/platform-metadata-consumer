@@ -1,0 +1,8 @@
+spring:
+  application.name: platform-metadata-consumer
+  cloud:
+    consul:
+      enabled: true
+      host: ${civ.consul.host:localhost}
+      port: ${civ.consul.port:8500}
+      config.profile-separator: "-"
